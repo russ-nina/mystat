@@ -1,0 +1,204 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+  height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+body {
+  font: 12px/18px Arial;
+  height: 100%;
+}
+.wrapper {
+  min-width: 400px;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+p {
+  color: #737373;
+  font-weight: 200;
+}
+span {
+  color: #909090;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+  width: 100%;
+  height: 100px;
+  background: #22272f;
+}
+.header div img {
+  margin: 15px;
+}
+
+
+
+/* Container
+-----------------------------------------------------------------------------*/
+.container {
+  width: 100%;
+}
+.content {
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  min-height: calc(100vh - 165px);
+}
+.item {
+  margin-top: 15px;
+  border: 1px solid #b5b5b5;
+  border-radius: 5px;
+  padding: 10px 20px 20px 10px;
+  max-width: 230px;
+
+}
+
+/* Имя и аватарка______________________________*/
+.student {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  cursor: pointer;
+}
+.avatar img {
+  border-radius:50%;
+}
+.full_name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2e2e2e;
+  margin-left: 15px;
+}
+
+/*Название группы______________________________*/
+.group_name {
+  font-size: 14px;
+}
+
+/*Награды______________________________________*/
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.ratings p {
+  font-size: 18px;
+}
+.crystal::before {
+  content: url('../src/img/christal.png');
+  margin-right: 5px;
+}
+.coin::before {
+  content: url('../src/img/coin.png');
+  margin-right: 5px;
+}
+.star::before {
+  content: url('../src/img/star.png');
+  margin-right: 5px;
+}
+.badge::before {
+  content: url('../src/img/badge.png');
+  margin-right: 5px;
+}
+
+/*Посещяемость и средний балл__________________*/
+.average_rating, .attendance {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.mark, .percent {
+  width: 50px;
+  background-color: #abdac2;
+  font-size: 24px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 20px;
+  text-align: center;
+}
+.average_rating span, .attendance span {
+  font-size: 14px;
+  margin-left: 15px;
+}
+.percent {
+  background-color: #88a4b4;
+}
+
+/*Контактная информация________________________*/
+.face_main, .phone_main, .mail_main {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.age, .phone, .mail {
+  font-size: 14px;
+  margin-left: 15px;
+}
+.material-icons {
+  color: #737373;
+  font-size: 14px;
+}
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+  margin: auto;
+  min-width: 400px;
+  max-width: 1400px;
+  height: 50px;
+  background: #abdac2;
+  position: relative;
+}
